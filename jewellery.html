@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewelry Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Eterna Jewels</h1>
+  </header>
+  
+  <!-- Carousel Section -->
+  <section id="carousel">
+    <h2>Our Collection</h2>
+    <div class="carousel">
+      <img src="C:\Users\Mandala Gayathri\OneDrive\Desktop\Puji\Pujitha\Pictures\jewel1.jpg" alt="Jewelry 1" class="carousel-image">
+      <img src="C:\Users\Mandala Gayathri\OneDrive\Desktop\Puji\Pujitha\Pictures\jewel2.jpg" alt="Jewelry 2" class="carousel-image">
+      <img src=" C:\Users\Mandala Gayathri\OneDrive\Desktop\Puji\Pujitha\Pictures\jewel3.jpg" alt="Jewelry 3" class="carousel-image">
+      <img src=" C:\Users\Mandala Gayathri\OneDrive\Desktop\Puji\Pujitha\Pictures\jewel4.jpg" alt="Jewelry 3" class="carousel-image">
+   
+      <button id="prev">Prev</button>
+      <button id="next">Next</button>
+    </div>
+  </section>
+
+  <!-- Quiz Section -->
+  <section id="quiz">
+    <h2>Jewelry Style Quiz</h2>
+    <p>Find out your ideal jewelry style!</p>
+    <form id="quiz-form">
+      <label>What's your favorite metal? <br>
+        <select id="question1">
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="platinum">Platinum</option>
+        </select>
+      </label><br><br>
+      <label>What's your go-to style? <br>
+        <select id="question2">
+          <option value="classic">Classic</option>
+          <option value="modern">Modern</option>
+          <option value="boho">Boho</option>
+        </select>
+      </label><br><br>
+      <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+    <p id="quiz-result"></p>
+  </section>
+
+  <!-- Joke Section -->
+  <section id="joke">
+    <h2>Enjoy a Jewelry-Themed Joke!</h2>
+    <button onclick="fetchJoke()">Get a Joke</button>
+    <p id="joke-content"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
